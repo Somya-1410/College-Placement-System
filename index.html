@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medi-Caps Placement Portal | College Placement System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true">MU</div>
+        <div>
+          <h1>College Placement System</h1>
+          <p>Medi-Caps University · Training &amp; Placement Cell</p>
+        </div>
+      </div>
+      <div class="role-switch" role="tablist" aria-label="User Role">
+        <button id="tS" class="role-btn is-active" role="tab" aria-selected="true" onclick="setRole('student')">
+          Student View
+        </button>
+        <button id="tA" class="role-btn" role="tab" aria-selected="false" onclick="setRole('admin')">
+          Placement Officer
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats-grid" aria-label="Placement Summary">
+      <div class="stat-card stat-drives">
+        <span class="stat-label">Open Drives</span>
+        <b id="sD" class="stat-value">0</b>
+        <span class="stat-hint">Active campus roles</span>
+      </div>
+      <div class="stat-card stat-apps">
+        <span class="stat-label">Applications</span>
+        <b id="sA" class="stat-value">0</b>
+        <span class="stat-hint">Submitted entries</span>
+      </div>
+      <div class="stat-card stat-placed">
+        <span class="stat-label">Students Placed</span>
+        <b id="sP" class="stat-value">0</b>
+        <span class="stat-hint">Selected candidates</span>
+      </div>
+    </section>
+
+    <div id="app" class="workspace"></div>
+  </main>
+
+  <div id="msg" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
