@@ -7,9 +7,9 @@ let state;
 function seedData() {
   return {
     student: {
-      name: "Mohd Uvesh Shaikh",
-      enroll: "EN23IT301042",
-      cgpa: 8.6
+      name: "Somya Choudhary",
+      enroll: "EN24CS3011007",
+      cgpa: 7.0
     },
     drives: [
       {
