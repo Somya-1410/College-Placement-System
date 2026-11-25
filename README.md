@@ -45,5 +45,4 @@ College-Placement-System/
 ├── index.html          # Main application layout and top navigation bar
 ├── styles.css          # Responsive styling, status badges, and Light/Dark theme variables
 ├── app.js              # State management, eligibility checks, and role-based rendering
-├── medicaps-logo.png   # University branding logo displayed in the header
 └── README.md           # Project documentation
